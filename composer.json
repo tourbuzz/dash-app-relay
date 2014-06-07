@@ -1,0 +1,13 @@
+{
+    "name": "apinstein/doc-foo",
+    "description": "dem project",
+    "require": {
+        "react/socket": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Alan Pinstein",
+            "email": "apinstein@mac.com"
+        }
+    ]
+}
