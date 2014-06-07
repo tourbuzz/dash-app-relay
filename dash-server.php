@@ -17,6 +17,8 @@ $socket->on('connection', function ($conn) {
         $conn->write("Searching {$docRequest['keys']} for {$docRequest['query']}\n");
         $dashUrl = escapeshellarg("dash-plugin://{$data}");
         `open dash-plugin://{$dashUrl}`;
+
+        $conn->close();
     });
 });
 $socket->listen(1337);
